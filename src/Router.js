@@ -4,17 +4,18 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import BoletaUnica from './components/BoletaUnica';
+import Resultados from './components/Resultados';
 
 const forrites = {
-  ariel: '/ariel', 
-  evelin: '/evelin', 
-  federico: '/federico', 
-  ignacio: '/ignacio', 
-  marco: '/marco', 
-  rodrigo: '/rodrigo', 
-  santiago: '/santiago', 
-  solana: '/solana', 
-  yamila: '/yamila'
+  ariel: '/M2tLnmk', 
+  evelin: '/Xmwdme6', 
+  federico: '/voHVeGX', 
+  ignacio: '/jTZX5Hh', 
+  marco: '/kEw1P1x', 
+  rodrigo: '/fpFr67v', 
+  santiago: '/DvQ3TW1', 
+  solana: '/WMNhGxh', 
+  yamila: '/eBHBQEh'
 };
 
 const Router = () => {
@@ -22,6 +23,7 @@ const Router = () => {
     <BrowserRouter>
       <Switch>
         { Object.keys(forrites).map(forrite => <Route exact key={forrites[forrite]} path={forrites[forrite]} component={BoletaUnica} />) }
+        <Route exact path='/tuviejaentanga' component={Resultados} />
       </Switch>
     </BrowserRouter>
   );
