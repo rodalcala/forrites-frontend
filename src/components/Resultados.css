@@ -5,6 +5,11 @@
   /* height: 100vh; */
 }
 
+.Resultados-pending-container {
+  width: 100vw;
+  height: 100vh;
+}
+
 .Resultados-forrito {
   padding: 1vw 5vw;
   text-align: center;

@@ -33,7 +33,9 @@ const Resultados = () => {
 
   const renderResultados = () => {
     if (!resultados) {
-      return <p className='Resultados-pending'>Smartmatic está procesando los resultados</p>
+      return <div className='Resultados-pending-container'>
+        <p className='Resultados-subtitulo'>Smartmatic está procesando los resultados</p>
+      </div>
     }
     const resultadosFinales = Object.keys(resultados).sort((a,b) => resultados[b]-resultados[a]).map(forrite => <p
       className='Resultados-forrito'
