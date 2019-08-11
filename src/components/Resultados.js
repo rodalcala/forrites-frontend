@@ -1,6 +1,8 @@
-/* Component handling votation logic */
+/* Component displaying the results */
 
 import React, { useEffect } from 'react';
+
+import './Resultados.css';
 
 const Resultados = props => {
   const resultsUrl = 'http://localhost:4000/results';
@@ -14,7 +16,7 @@ const Resultados = props => {
       .catch(err => alert(err));
   }
 
-  return <div>
+  return <div className='Resultados-container'>
     <p>Bienvenides</p>
   </div>
 }
