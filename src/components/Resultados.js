@@ -25,6 +25,7 @@ const Resultados = () => {
       .then(res => res.json())
       .then(res => {
         console.log('Resultados parciales:', res.resultados);
+        console.log('Asistencia parcial:', res.asistencia);
         const votacionCerrada = Object.values(res.asistencia).every(item => item);
         if (votacionCerrada) {
           setResultados(res.resultados);
