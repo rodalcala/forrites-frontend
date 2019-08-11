@@ -40,7 +40,7 @@ const BoletaUnica = props => {
       })
     })
       .then(() => alert('Tu voto fue registrado con exito!'))
-      .catch(err => alert('Solo un vote por forrite, campeon'));
+      .catch(err => alert('Era antes de las 6 papá'));
   }
 
   const renderForrites = () => (
