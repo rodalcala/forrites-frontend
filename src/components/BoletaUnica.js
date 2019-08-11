@@ -5,7 +5,8 @@ import React from 'react';
 import './BoletaUnica.css';
 
 const BoletaUnica = props => {
-  const votingUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000' + '/vote' + props.match.path;
+  const baseUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000';
+  const votingUrl = baseUrl + '/vote' + props.match.path;
   const defaultHeaders = { 'Accept': 'application/json', 'Content-Type': 'application/json' };
   const forrites = [
     'ariel',

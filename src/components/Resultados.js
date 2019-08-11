@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react';
 import './Resultados.css';
 
 const Resultados = () => {
-  const resultsUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000' + '/results';
+  const baseUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000';
+  const resultsUrl = baseUrl  + '/results';
   const [ resultados, setResultados ] = useState(false);
   const miniaturas = {
     ariel: 'https://i.imgur.com/6hP9MpN.jpg',
@@ -23,6 +24,7 @@ const Resultados = () => {
     fetch(resultsUrl)
       .then(res => res.json())
       .then(res => {
+        console.log('Resultados parciales:', res.resultados);
         const votacionCerrada = Object.values(res.asistencia).every(item => item);
         if (votacionCerrada) {
           setResultados(res.resultados);
@@ -57,8 +59,6 @@ const Resultados = () => {
       key={candidato}
     />)
   }
-
-  console.log('resultados', resultados);
 
   return <div className='Resultados-container'>
     { resultados ? <p className='Resultados-titulo'>HABEMUS CANDIDATOS:</p> : null }
