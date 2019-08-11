@@ -23,7 +23,7 @@ const Router = () => {
     <BrowserRouter>
       <Switch>
         { Object.keys(forrites).map(forrite => <Route exact key={forrites[forrite]} path={forrites[forrite]} component={BoletaUnica} />) }
-        <Route exact path='/tuviejaentanga' component={Resultados} />
+        <Route exact path='/resultados' component={Resultados} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,0 +1,44 @@
+.Resultados-container {
+  background: rgb(18,21,25);
+  background: linear-gradient(0deg, rgba(18,21,25,1) 0%, rgba(9,139,212,1) 100%);
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+
+.Resultados-forrito {
+  padding: 1vw 5vw;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.Resultados-titulo {
+  font-size: 10vw;
+  padding: 5vw;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.Resultados-subtitulo {
+  font-size: 7vw;
+  padding: 5vw;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.Resultados-candidato {
+  width: 60wv;
+  height: 60vw;
+  padding: 5vw;
+}
+
+.Resultados-candidatos-container {
+  padding: 2vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Resultados-resultados-container {
+  padding: 5vw 0;  
+}

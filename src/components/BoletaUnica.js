@@ -5,7 +5,7 @@ import React from 'react';
 import './BoletaUnica.css';
 
 const BoletaUnica = props => {
-  const votingUrl = 'http://localhost:4000/vote' + props.match.path;
+  const votingUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000' + '/vote' + props.match.path;
   const defaultHeaders = { 'Accept': 'application/json', 'Content-Type': 'application/json' };
   const forrites = [
     'ariel',
@@ -45,7 +45,8 @@ const BoletaUnica = props => {
   const renderForrites = () => (
     forrites.map(forrite => <img
       className='BoletaUnica-candidato'
-      alt='candidato' src={miniaturas[forrite]}
+      alt='candidato'
+      src={miniaturas[forrite]}
       key={forrite}
       onClick={() => handleVote(forrite)}
     />)
