@@ -55,7 +55,7 @@ const BoletaUnica = props => {
 
   return <div className='BoletaUnica-container'>
     <p className='BoletaUnica-titulo'>PASO '19</p>
-    <p className='BoletaUnica-intro'>Cuatro años despuês, acá estamos nuevamente, celebrando la fiesta de la democracia!</p>
+    <p className='BoletaUnica-intro'>Cuatro años después, acá estamos nuevamente, celebrando la fiesta de la democracia!</p>
     <p className='BoletaUnica-intro'> </p>
     <p className='BoletaUnica-intro'>La consigna es sencilla:</p>
     <p className='BoletaUnica-intro'>Elegí al forrite que quieras que te represente en las elecciones generales del 27 de ocubre.</p>
