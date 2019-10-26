@@ -5,8 +5,6 @@ import React, { useEffect, useState } from 'react';
 import BoletaUnica from './components/BoletaUnica';
 import Resultados from './components/Resultados';
 
-import './App.css';
-
 const App = ({ match }) => {
   const baseUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:4000';
   const resultsUrl = baseUrl  + '/results' + match.path;
@@ -17,8 +15,8 @@ const App = ({ match }) => {
     fetch(resultsUrl)
       .then(res => res.json())
       .then(res => {
-          setResultados(res.resultados);
-          setAlreadyVoted(res.alreadyVoted);
+        setResultados(res.resultados);
+        setAlreadyVoted(res.alreadyVoted);
       })
       .catch(err => console.log(err));
   }, [resultsUrl])

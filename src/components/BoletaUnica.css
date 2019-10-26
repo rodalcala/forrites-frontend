@@ -7,7 +7,7 @@
 }
 
 .BoletaUnica-candidatos-container {
-  padding: 4vw 0;
+  padding-top: 4vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,6 +22,6 @@
   color: lightpink;
   text-align: right;
   font-size: 4vw;
-  padding-top: 40vw;
+  padding-top: 45vw;
   padding-right: 4vw;
 }

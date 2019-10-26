@@ -1,49 +1,48 @@
 .Resultados-container {
-  background: rgb(18,21,25);
-  background: linear-gradient(0deg, rgba(18,21,25,1) 0%, rgba(9,139,212,1) 100%);
-  /* width: 100vw; */
-  /* height: 100vh; */
-}
-
-.Resultados-pending-container {
+  background: gray;
+  background: linear-gradient(0deg, rgb(161, 161, 161) 0%, gray 40%);
   width: 100vw;
-  height: 100vh;
-}
-
-.Resultados-forrito {
-  padding: 1vw 5vw;
-  text-align: center;
+  min-height: 100vh;
+  padding-top: 8vw;
+  overflow: hidden;
   color: whitesmoke;
 }
 
 .Resultados-titulo {
-  font-size: 10vw;
-  padding: 5vw;
+  font-size: 9vw;
+  padding: 2vw 0 3vw 0;
   text-align: center;
-  color: whitesmoke;
 }
 
 .Resultados-subtitulo {
   font-size: 7vw;
-  padding: 5vw;
   text-align: center;
-  color: whitesmoke;
 }
 
-.Resultados-candidato {
-  width: 60wv;
-  height: 60vw;
-  padding: 5vw;
+.Resultados-divider {
+  border-bottom: solid whitesmoke 1px;
+  width: 80vw;
+  margin: 8vw auto;
 }
 
-.Resultados-candidatos-container {
-  padding: 2vw 0;
+.Resultados-text {
+  padding: 15vw 5vw;
+  text-align: center;
+}
+
+.Resultados-candidato-container {
+  padding: 4vw 0 10vw 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Resultados-resultados-container {
-  padding: 5vw 0;  
+.Resultados-candidato {
+  width: 75vw;
+}
+
+.Resultados-resultados {
+  padding: 0 5vw;
+  text-align: center;
 }
