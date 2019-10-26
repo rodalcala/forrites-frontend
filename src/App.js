@@ -25,7 +25,7 @@ const App = ({ match }) => {
 
   /* NOTE: match es una prop que reciben por defecto los componentes que renderiza el router */
   if (alreadyVoted) return <Resultados resultados={resultados} />;
-  return <BoletaUnica match={match} />
+  return <BoletaUnica match={match} setAlreadyVoted={setAlreadyVoted} />
 
 }
 
