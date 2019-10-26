@@ -1,43 +1,28 @@
-.BoletaUnica-candidato {
-  width: 35wv;
-  height: 35vw;
-  padding: 5vw;
-}
-
-.BoletaUnica-titulo {
-  font-size: 26vw;
+.BoletaUnica-container {
+  background: gray;
+  background: linear-gradient(0deg, rgb(161, 161, 161) 0%, gray 40%);
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-  text-overflow: clip;
-  white-space: nowrap;
-  display: block;
-  font-weight: bold;
-  color: lightgrey;
-  padding: 2vw 0;
 }
 
 .BoletaUnica-candidatos-container {
   padding: 2vw 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.BoletaUnica-container {
-  background: rgb(18,21,25);
-  background: linear-gradient(0deg, rgba(18,21,25,1) 0%, rgba(9,139,212,1) 100%);
-}
-
-.BoletaUnica-intro {
-  padding: 1vw 5vw;
-  text-align: center;
-  color: whitesmoke;
+.BoletaUnica-candidato {
+  padding: 4vw;
+  /* cursor: pointer; */
 }
 
 .BoletaUnica-footer {
-  color: lightgrey;
-  text-align: center;
+  color: lightpink;
+  text-align: right;
   font-size: 4vw;
-  padding: 1vw;
+  padding-top: 40vw;
+  padding-right: 4vw;
 }

@@ -3,8 +3,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import BoletaUnica from './components/BoletaUnica';
-import Resultados from './components/Resultados';
+import App from './App';
 
 const forrites = {
   ariel: '/M2tLnmk', 
@@ -22,8 +21,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        { Object.keys(forrites).map(forrite => <Route exact key={forrites[forrite]} path={forrites[forrite]} component={BoletaUnica} />) }
-        <Route exact path='/resultados' component={Resultados} />
+        { Object.keys(forrites).map(forrite => <Route exact key={forrites[forrite]} path={forrites[forrite]} component={App} />) }
       </Switch>
     </BrowserRouter>
   );
